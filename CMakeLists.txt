@@ -26,3 +26,13 @@ target_link_libraries(test_tree PRIVATE bayes_tree)
 # Enable CTest
 enable_testing()
 add_test(NAME test_tree COMMAND test_tree)
+
+
+# Python bindings
+option(BUILD_PYTHON_BINDINGS "Build Python bindings" ON)
+if (BUILD_PYTHON_BINDINGS)
+    add_subdirectory(python)
+endif()
+
+
+

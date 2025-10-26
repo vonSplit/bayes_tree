@@ -1,12 +1,15 @@
 # ninja log v7
-35	66	7831792931923040	clean	1af91f7c99a6b02c
-35	160	7831792934054995	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	61dfe8ce88370900
-18	1551	7831792933885137	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	9524b12cdf768552
-7	1446	7831795627057700	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	3ef0c72e72741c7f
-1569	2007	7831792949392575	bayes_tree.lib	567eb47fe72115e9
-1450	1703	7831795641477653	test_tree.exe	7071c598a259bd82
-41	149	7831801041127322	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	91850f74666f749c
-26	1378	7831801040975837	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	595d6077ae7b3289
-55	1395	7831801041257480	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	67fc9d7a3473338
-1379	1621	7831801054496714	bayes_tree.lib	567eb47fe72115e9
-1635	1963	7831801057055091	test_tree.exe	7071c598a259bd82
+37	126	7831962063376990	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	f25fc2a19ac4e397
+44	969	7831962063456988	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	3915067e82ec6b98
+30	989	7831962063296956	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	9ebb84490254e0ca
+990	1220	7831962072896115	bayes_tree.lib	567eb47fe72115e9
+1220	1381	7831962075196065	test_tree.exe	5b513601c1367b8c
+51	5522	7831962063567007	python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj	30f9d6af42f89728
+5524	5742	7831962118230146	python/pybayes_tree.cp311-win_amd64.pyd	3432fb6b5cdf3c95
+90	288	7831965470268146	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	923170226fa3a91
+76	1918	7831965470108115	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	c341636192c51a55
+115	1967	7831965470548137	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	5fad5faafef11d5f
+1920	2138	7831965488543315	bayes_tree.lib	567eb47fe72115e9
+2139	2439	7831965490733273	test_tree.exe	cc9cd0a5885fa4ee
+138	7715	7831965470818193	python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj	e8af773d93d4c10e
+7716	10469	7831965546637248	python/pybayes_tree.cp311-win_amd64.pyd	9487e6b42547009c
