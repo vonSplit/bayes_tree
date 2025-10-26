@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20251026-1057-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.0.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="JT-DELL-5505"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26200)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="0"
+	ModelName="AMD Ryzen 5 4500U with Radeon Graphics         "
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="6"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="17401"
+	TotalPhysicalMemory="15737"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2370"
+	>
+	<Testing>
+		<StartDateTime>Oct 26 11:14 GMT Standard Time</StartDateTime>
+		<StartTestTime>1761477244</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 26 11:14 GMT Standard Time</EndDateTime>
+		<EndTestTime>1761477244</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

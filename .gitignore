@@ -1,0 +1,44 @@
+# Build directories
+/build/
+/bin/
+/lib/
+/out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+*.ninja
+*.vcxproj*
+*.sln
+*.user
+*.ipch
+*.obj
+*.o
+*.pdb
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+
+# VSCode
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+*.tmp

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\bayes_tree.dir\\src\\bayes_tree.cpp.obj -c C:\\Users\\User\\OneDrive\\Projects\\Banyan\\C++\\bayes_tree\\src\\bayes_tree.cpp",
+  "file": "C:\\Users\\User\\OneDrive\\Projects\\Banyan\\C++\\bayes_tree\\src\\bayes_tree.cpp",
+  "output": "CMakeFiles\\bayes_tree.dir\\src\\bayes_tree.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\bayes_tree.dir\\src\\node.cpp.obj -c C:\\Users\\User\\OneDrive\\Projects\\Banyan\\C++\\bayes_tree\\src\\node.cpp",
+  "file": "C:\\Users\\User\\OneDrive\\Projects\\Banyan\\C++\\bayes_tree\\src\\node.cpp",
+  "output": "CMakeFiles\\bayes_tree.dir\\src\\node.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\test_tree.dir\\tests\\test_tree.cpp.obj -c C:\\Users\\User\\OneDrive\\Projects\\Banyan\\C++\\bayes_tree\\tests\\test_tree.cpp",
+  "file": "C:\\Users\\User\\OneDrive\\Projects\\Banyan\\C++\\bayes_tree\\tests\\test_tree.cpp",
+  "output": "CMakeFiles\\test_tree.dir\\tests\\test_tree.cpp.obj"
+}
+]
