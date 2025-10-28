@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: BayesTree
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Release
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,20 +49,30 @@ cmake_ninja_workdir = C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/bui
 
 build cmake_object_order_depends_target_bayes_tree: phony || .
 
-build CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj: CXX_COMPILER__bayes_tree_unscanned_Release C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/src/bayes_tree.cpp || cmake_object_order_depends_target_bayes_tree
-  CONFIG = Release
+build CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj: CXX_COMPILER__bayes_tree_unscanned_Debug C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/src/bayes_tree.cpp || cmake_object_order_depends_target_bayes_tree
+  CONFIG = Debug
   DEP_FILE = CMakeFiles\bayes_tree.dir\src\bayes_tree.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=c++20 -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
+  FLAGS = -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   INCLUDES = -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include
   OBJECT_DIR = CMakeFiles\bayes_tree.dir
   OBJECT_FILE_DIR = CMakeFiles\bayes_tree.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\bayes_tree.dir\bayes_tree.pdb
   TARGET_PDB = bayes_tree.pdb
 
-build CMakeFiles/bayes_tree.dir/src/node.cpp.obj: CXX_COMPILER__bayes_tree_unscanned_Release C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/src/node.cpp || cmake_object_order_depends_target_bayes_tree
-  CONFIG = Release
+build CMakeFiles/bayes_tree.dir/src/categorical_distribution.cpp.obj: CXX_COMPILER__bayes_tree_unscanned_Debug C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/src/categorical_distribution.cpp || cmake_object_order_depends_target_bayes_tree
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\bayes_tree.dir\src\categorical_distribution.cpp.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include
+  OBJECT_DIR = CMakeFiles\bayes_tree.dir
+  OBJECT_FILE_DIR = CMakeFiles\bayes_tree.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\bayes_tree.dir\bayes_tree.pdb
+  TARGET_PDB = bayes_tree.pdb
+
+build CMakeFiles/bayes_tree.dir/src/node.cpp.obj: CXX_COMPILER__bayes_tree_unscanned_Debug C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/src/node.cpp || cmake_object_order_depends_target_bayes_tree
+  CONFIG = Debug
   DEP_FILE = CMakeFiles\bayes_tree.dir\src\node.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=c++20 -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
+  FLAGS = -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   INCLUDES = -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include
   OBJECT_DIR = CMakeFiles\bayes_tree.dir
   OBJECT_FILE_DIR = CMakeFiles\bayes_tree.dir\src
@@ -77,9 +87,9 @@ build CMakeFiles/bayes_tree.dir/src/node.cpp.obj: CXX_COMPILER__bayes_tree_unsca
 #############################################
 # Link the static library bayes_tree.lib
 
-build bayes_tree.lib: CXX_STATIC_LIBRARY_LINKER__bayes_tree_Release CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj CMakeFiles/bayes_tree.dir/src/node.cpp.obj
-  CONFIG = Release
-  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
+build bayes_tree.lib: CXX_STATIC_LIBRARY_LINKER__bayes_tree_Debug CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj CMakeFiles/bayes_tree.dir/src/categorical_distribution.cpp.obj CMakeFiles/bayes_tree.dir/src/node.cpp.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   OBJECT_DIR = CMakeFiles\bayes_tree.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -96,10 +106,10 @@ build bayes_tree.lib: CXX_STATIC_LIBRARY_LINKER__bayes_tree_Release CMakeFiles/b
 
 build cmake_object_order_depends_target_test_tree: phony || cmake_object_order_depends_target_bayes_tree
 
-build CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj: CXX_COMPILER__test_tree_unscanned_Release C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/tests/test_tree.cpp || cmake_object_order_depends_target_test_tree
-  CONFIG = Release
+build CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj: CXX_COMPILER__test_tree_unscanned_Debug C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/tests/test_tree.cpp || cmake_object_order_depends_target_test_tree
+  CONFIG = Debug
   DEP_FILE = CMakeFiles\test_tree.dir\tests\test_tree.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=c++20 -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
+  FLAGS = -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   INCLUDES = -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include
   OBJECT_DIR = CMakeFiles\test_tree.dir
   OBJECT_FILE_DIR = CMakeFiles\test_tree.dir\tests
@@ -114,9 +124,9 @@ build CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj: CXX_COMPILER__test_tree_
 #############################################
 # Link the executable test_tree.exe
 
-build test_tree.exe: CXX_EXECUTABLE_LINKER__test_tree_Release CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj | bayes_tree.lib || bayes_tree.lib
-  CONFIG = Release
-  FLAGS = -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
+build test_tree.exe: CXX_EXECUTABLE_LINKER__test_tree_Debug CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj | bayes_tree.lib || bayes_tree.lib
+  CONFIG = Debug
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   LINK_FLAGS = -Xlinker /subsystem:console -fuse-ld=lld-link
   LINK_LIBRARIES = bayes_tree.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
   OBJECT_DIR = CMakeFiles\test_tree.dir
@@ -126,6 +136,46 @@ build test_tree.exe: CXX_EXECUTABLE_LINKER__test_tree_Release CMakeFiles/test_tr
   TARGET_FILE = test_tree.exe
   TARGET_IMPLIB = test_tree.lib
   TARGET_PDB = test_tree.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_categorical_distribution
+
+
+#############################################
+# Order-only phony target for test_categorical_distribution
+
+build cmake_object_order_depends_target_test_categorical_distribution: phony || cmake_object_order_depends_target_bayes_tree
+
+build CMakeFiles/test_categorical_distribution.dir/tests/test_categorical_distribution.cpp.obj: CXX_COMPILER__test_categorical_distribution_unscanned_Debug C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/tests/test_categorical_distribution.cpp || cmake_object_order_depends_target_test_categorical_distribution
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\test_categorical_distribution.dir\tests\test_categorical_distribution.cpp.obj.d
+  FLAGS = -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  INCLUDES = -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include
+  OBJECT_DIR = CMakeFiles\test_categorical_distribution.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_categorical_distribution.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\test_categorical_distribution.dir\
+  TARGET_PDB = test_categorical_distribution.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_categorical_distribution
+
+
+#############################################
+# Link the executable test_categorical_distribution.exe
+
+build test_categorical_distribution.exe: CXX_EXECUTABLE_LINKER__test_categorical_distribution_Debug CMakeFiles/test_categorical_distribution.dir/tests/test_categorical_distribution.cpp.obj | bayes_tree.lib || bayes_tree.lib
+  CONFIG = Debug
+  FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  LINK_FLAGS = -Xlinker /subsystem:console -fuse-ld=lld-link
+  LINK_LIBRARIES = bayes_tree.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
+  OBJECT_DIR = CMakeFiles\test_categorical_distribution.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\test_categorical_distribution.dir\
+  TARGET_FILE = test_categorical_distribution.exe
+  TARGET_IMPLIB = test_categorical_distribution.lib
+  TARGET_PDB = test_categorical_distribution.pdb
 
 
 #############################################
@@ -177,11 +227,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_pybayes_tree: phony || cmake_object_order_depends_target_bayes_tree
 
-build python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj: CXX_COMPILER__pybayes_tree_unscanned_Release C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/python/bindings.cpp || cmake_object_order_depends_target_pybayes_tree
-  CONFIG = Release
+build python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj: CXX_COMPILER__pybayes_tree_unscanned_Debug C$:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/python/bindings.cpp || cmake_object_order_depends_target_pybayes_tree
+  CONFIG = Debug
   DEFINES = -Dpybayes_tree_EXPORTS
   DEP_FILE = python\CMakeFiles\pybayes_tree.dir\bindings.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=c++20 -D_DLL -D_MT -Xclang --dependent-lib=msvcrt -flto
+  FLAGS = -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
   INCLUDES = -IC:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/include -isystem C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/include -isystem "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0/Include"
   OBJECT_DIR = python\CMakeFiles\pybayes_tree.dir
   OBJECT_FILE_DIR = python\CMakeFiles\pybayes_tree.dir
@@ -196,13 +246,13 @@ build python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj: CXX_COMPILER__pybayes
 #############################################
 # Link the shared module python\pybayes_tree.cp311-win_amd64.pyd
 
-build python/pybayes_tree.cp311-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__pybayes_tree_Release python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj | bayes_tree.lib C$:/Program$ Files/WindowsApps/PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0/libs/python311.lib || bayes_tree.lib
-  CONFIG = Release
-  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
-  LINK_FLAGS = -flto -fuse-ld=lld-link
+build python/pybayes_tree.cp311-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__pybayes_tree_Debug python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj | bayes_tree.lib C$:/Program$ Files/WindowsApps/PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0/libs/python311.lib || bayes_tree.lib
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  LINK_FLAGS = -fuse-ld=lld-link
   LINK_LIBRARIES = bayes_tree.lib  "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0/libs/python311.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
   OBJECT_DIR = python\CMakeFiles\pybayes_tree.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\OneDrive\Projects\Banyan\C++\bayes_tree\build\python && "C:\Program Files\LLVM\bin\llvm-strip.exe" C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/python/pybayes_tree.cp311-win_amd64.pyd"
+  POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = python\CMakeFiles\pybayes_tree.dir\
   TARGET_FILE = python\pybayes_tree.cp311-win_amd64.pyd
@@ -254,6 +304,8 @@ build pybayes_tree: phony python/pybayes_tree.cp311-win_amd64.pyd
 
 build pybayes_tree.cp311-win_amd64.pyd: phony python/pybayes_tree.cp311-win_amd64.pyd
 
+build test_categorical_distribution: phony test_categorical_distribution.exe
+
 build test_tree: phony test_tree.exe
 
 # =============================================================================
@@ -264,7 +316,7 @@ build test_tree: phony test_tree.exe
 #############################################
 # Folder: C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build
 
-build all: phony bayes_tree.lib test_tree.exe python/all
+build all: phony bayes_tree.lib test_tree.exe test_categorical_distribution.exe python/all
 
 # =============================================================================
 

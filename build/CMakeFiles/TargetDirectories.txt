@@ -1,5 +1,6 @@
 C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/bayes_tree.dir
 C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/test_tree.dir
+C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/test_categorical_distribution.dir
 C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/test.dir
 C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/edit_cache.dir
 C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/rebuild_cache.dir

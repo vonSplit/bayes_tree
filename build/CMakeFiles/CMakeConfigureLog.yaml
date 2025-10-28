@@ -59,8 +59,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-repcix"
-      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-repcix"
+      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-9cztud"
+      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-9cztud"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -71,16 +71,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-repcix'
+        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-9cztud'
         
-        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_5a005
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_5a005.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_5a005.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_5a005.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_5a005.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_5a005.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_5a005.lib -Xlinker /pdb:cmTC_5a005.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_c1d13
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_c1d13.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_c1d13.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_c1d13.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_c1d13.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c1d13.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_c1d13.lib -Xlinker /pdb:cmTC_c1d13.pdb -Xlinker /version:0.0     && cd ."
         clang version 20.1.5
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_5a005.exe "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\lib\\\\x64" "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.26100.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.26100.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\20\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_5a005.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_5a005.lib /pdb:cmTC_5a005.pdb /version:0.0
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_c1d13.exe "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\lib\\\\x64" "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.26100.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.26100.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\20\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_c1d13.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_c1d13.lib /pdb:cmTC_c1d13.pdb /version:0.0
         
       exitCode: 0
   -
@@ -144,8 +144,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-hihxwg"
-      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-hihxwg"
+      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-zk4ftg"
+      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-zk4ftg"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -155,11 +155,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-hihxwg'
+        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-zk4ftg'
         
-        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_83da9
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_83da9.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_83da9.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_83da9.dir/feature_tests.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-hihxwg/feature_tests.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_83da9.dir/feature_tests.cxx.obj -o cmTC_83da9.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_83da9.lib -Xlinker /pdb:cmTC_83da9.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_5630d
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_5630d.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_5630d.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_5630d.dir/feature_tests.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-zk4ftg/feature_tests.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_5630d.dir/feature_tests.cxx.obj -o cmTC_5630d.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_5630d.lib -Xlinker /pdb:cmTC_5630d.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
   -
@@ -174,8 +174,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-ml2p3o"
-      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-ml2p3o"
+      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xtp2v8"
+      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xtp2v8"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -185,11 +185,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-ml2p3o'
+        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xtp2v8'
         
-        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_0848e
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_0848e.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_0848e.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_0848e.dir/feature_tests.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-ml2p3o/feature_tests.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_0848e.dir/feature_tests.cxx.obj -o cmTC_0848e.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_0848e.lib -Xlinker /pdb:cmTC_0848e.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_2092a
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_2092a.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_2092a.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_2092a.dir/feature_tests.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xtp2v8/feature_tests.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_2092a.dir/feature_tests.cxx.obj -o cmTC_2092a.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_2092a.lib -Xlinker /pdb:cmTC_2092a.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
   -
@@ -202,12 +202,12 @@ events:
       - "C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:361 (_pybind11_return_if_cxx_and_linker_flags_work)"
       - "C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:427 (_pybind11_generate_lto)"
       - "C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
-      - "python/CMakeLists.txt:3 (find_package)"
+      - "python/CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test HAS_FLTO_THIN"
     directories:
-      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-6rzikk"
-      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-6rzikk"
+      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-kpwrbx"
+      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-kpwrbx"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -218,11 +218,11 @@ events:
       variable: "HAS_FLTO_THIN"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-6rzikk'
+        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-kpwrbx'
         
-        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_46fa9
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DHAS_FLTO_THIN  -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -flto -MD -MT CMakeFiles/cmTC_46fa9.dir/src.cxx.obj -MF CMakeFiles\\cmTC_46fa9.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_46fa9.dir/src.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-6rzikk/src.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_46fa9.dir/src.cxx.obj -o cmTC_46fa9.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_46fa9.lib -Xlinker /pdb:cmTC_46fa9.pdb -Xlinker /version:0.0   -flto  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_5960e
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DHAS_FLTO_THIN  -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -flto -MD -MT CMakeFiles/cmTC_5960e.dir/src.cxx.obj -MF CMakeFiles\\cmTC_5960e.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_5960e.dir/src.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-kpwrbx/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_5960e.dir/src.cxx.obj -o cmTC_5960e.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_5960e.lib -Xlinker /pdb:cmTC_5960e.pdb -Xlinker /version:0.0   -flto  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
   -
@@ -235,12 +235,12 @@ events:
       - "C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:371 (_pybind11_return_if_cxx_and_linker_flags_work)"
       - "C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:427 (_pybind11_generate_lto)"
       - "C:/Users/User/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
-      - "python/CMakeLists.txt:3 (find_package)"
+      - "python/CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test HAS_FLTO"
     directories:
-      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xy94s6"
-      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xy94s6"
+      source: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-17h7ek"
+      binary: "C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-17h7ek"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -251,11 +251,11 @@ events:
       variable: "HAS_FLTO"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xy94s6'
+        Change Dir: 'C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-17h7ek'
         
-        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_4fbbd
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DHAS_FLTO  -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -flto -MD -MT CMakeFiles/cmTC_4fbbd.dir/src.cxx.obj -MF CMakeFiles\\cmTC_4fbbd.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_4fbbd.dir/src.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-xy94s6/src.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_4fbbd.dir/src.cxx.obj -o cmTC_4fbbd.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_4fbbd.lib -Xlinker /pdb:cmTC_4fbbd.pdb -Xlinker /version:0.0   -flto  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/PROGRA~1/ninja/ninja.exe -v cmTC_ca3ca
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -DHAS_FLTO  -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -flto -MD -MT CMakeFiles/cmTC_ca3ca.dir/src.cxx.obj -MF CMakeFiles\\cmTC_ca3ca.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_ca3ca.dir/src.cxx.obj -c C:/Users/User/OneDrive/Projects/Banyan/C++/bayes_tree/build/CMakeFiles/CMakeScratch/TryCompile-17h7ek/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang++.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link CMakeFiles/cmTC_ca3ca.dir/src.cxx.obj -o cmTC_ca3ca.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_ca3ca.lib -Xlinker /pdb:cmTC_ca3ca.pdb -Xlinker /version:0.0   -flto  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
 ...

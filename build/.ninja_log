@@ -1,15 +1,11 @@
 # ninja log v7
-37	126	7831962063376990	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	f25fc2a19ac4e397
-44	969	7831962063456988	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	3915067e82ec6b98
-30	989	7831962063296956	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	9ebb84490254e0ca
-990	1220	7831962072896115	bayes_tree.lib	567eb47fe72115e9
-1220	1381	7831962075196065	test_tree.exe	5b513601c1367b8c
-51	5522	7831962063567007	python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj	30f9d6af42f89728
-5524	5742	7831962118230146	python/pybayes_tree.cp311-win_amd64.pyd	3432fb6b5cdf3c95
-90	288	7831965470268146	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	923170226fa3a91
-76	1918	7831965470108115	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	c341636192c51a55
-115	1967	7831965470548137	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	5fad5faafef11d5f
-1920	2138	7831965488543315	bayes_tree.lib	567eb47fe72115e9
-2139	2439	7831965490733273	test_tree.exe	cc9cd0a5885fa4ee
-138	7715	7831965470818193	python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj	e8af773d93d4c10e
-7716	10469	7831965546637248	python/pybayes_tree.cp311-win_amd64.pyd	9487e6b42547009c
+42	161	7833536881472999	CMakeFiles/bayes_tree.dir/src/node.cpp.obj	f25fc2a19ac4e397
+30	1191	7833536881343263	CMakeFiles/bayes_tree.dir/src/bayes_tree.cpp.obj	9ebb84490254e0ca
+29	888	7833557457144276	CMakeFiles/test_tree.dir/tests/test_tree.cpp.obj	3915067e82ec6b98
+37	1289	7833536881412977	CMakeFiles/bayes_tree.dir/src/categorical_distribution.cpp.obj	ec0d1beafb2cd82
+14	1066	7833557334076304	CMakeFiles/test_categorical_distribution.dir/tests/test_categorical_distribution.cpp.obj	93f25e28821ead58
+1292	1524	7833536893972990	bayes_tree.lib	3414fcad7066f4c3
+889	1032	7833557465744393	test_tree.exe	5b513601c1367b8c
+1066	1230	7833557344596227	test_categorical_distribution.exe	4d5a9d6a6b58d8ee
+63	5751	7833536881782992	python/CMakeFiles/pybayes_tree.dir/bindings.cpp.obj	30f9d6af42f89728
+5759	5958	7833536938643179	python/pybayes_tree.cp311-win_amd64.pyd	3432fb6b5cdf3c95
