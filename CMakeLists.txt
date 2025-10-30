@@ -9,6 +9,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_library(bayes_tree
     src/bayes_tree.cpp
     src/categorical_distribution.cpp
+    src/dirichlet_distribution.cpp
+    src/conjugate_categorical_dirichlet.cpp 
     src/node.cpp
 )
 
@@ -29,14 +31,22 @@ add_executable(test_tree tests/test_tree.cpp)
 # test_tree has access to bayes_tree library
 target_link_libraries(test_tree PRIVATE bayes_tree)
 
-add_executable(test_categorical_distribution tests/test_categorical_distribution.cpp)
+add_executable       (test_categorical_distribution tests/test_categorical_distribution.cpp)
 target_link_libraries(test_categorical_distribution PRIVATE bayes_tree)
+
+add_executable       (test_dirichlet_distribution tests/test_dirichlet_distribution.cpp)
+target_link_libraries(test_dirichlet_distribution PRIVATE bayes_tree)
+
+add_executable       (test_conjugate_categorical_dirichlet tests/test_dirichlet_distribution.cpp)
+target_link_libraries(test_conjugate_categorical_dirichlet PRIVATE bayes_tree)
 
 # Enable CTest support  
 enable_testing()
 # Register tests with CTest: NAME <test_name> COMMAND <executable>
-add_test(NAME test_tree COMMAND test_tree)
-add_test(NAME test_categorical_distribution COMMAND test_categorical_distribution)
+add_test(NAME test_tree                            COMMAND test_tree)
+add_test(NAME test_categorical_distribution        COMMAND test_categorical_distribution)
+add_test(NAME test_dirichlet_distribution          COMMAND test_dirichlet_distribution)
+add_test(NAME test_conjugate_categorical_dirichlet COMMAND test_conjugate_categorical_dirichlet)
 
 
 # Python bindings

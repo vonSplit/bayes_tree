@@ -10,12 +10,12 @@ CategoricalDistribution::CategoricalDistribution(const std::vector<double>& prob
     if (probs.empty())
         throw std::invalid_argument("Probability vector cannot be empty.");
 
-    probabilities_ = probs;  
-    normalize();
+    probabilities_ = probs;  // Creates a copy
+    normalise();
 }
 
 // Normalizes the probability vector to sum to 1
-void CategoricalDistribution::normalize() {
+void CategoricalDistribution::normalise() {
     double sum = std::accumulate(probabilities_.begin(), probabilities_.end(), 0.0);
     if (sum <= 0.0)
         throw std::invalid_argument("Sum of probabilities must be positive.");

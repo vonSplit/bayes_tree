@@ -8,6 +8,6 @@ public:
     double log_likelihood(const std::vector<int>& counts) const;
 
 private:
-    void normalize();
+    void normalise();
     std::vector<double> probabilities_;
 };
