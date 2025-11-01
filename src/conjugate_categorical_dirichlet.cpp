@@ -90,10 +90,17 @@ void ConjugateCategoricalDirichlet::initialiseJeffreysFromObservationDistributio
     double total_alpha = num_categories * 0.5;
     
     // Scale the observation probabilities by total_alpha to get alphas
-    std::vector<double> alphas(num_categories);
     const auto& probs = obs_dist.probs();
-    for (int i = 0; i < num_categories; ++i) {
-        alphas[i] = probs[i] * total_alpha;
+    // std::vector<double> alphas(num_categories);
+    // for (int i = 0; i < num_categories; ++i) {
+    //     alphas[i] = probs[i] * total_alpha;
+    // }
+
+    std::vector<double> alphas;
+    alphas.reserve(num_categories);
+
+    for (double p : probs) {
+        alphas.push_back(p * total_alpha);
     }
     
     parameter_distribution_ = std::make_unique<DirichletDistribution>(alphas);
@@ -139,7 +146,7 @@ void ConjugateCategoricalDirichlet::updateFromObservations(const std::vector<int
     updateObservationDistribution();
 }
 
-// Calculate log likelihood from observed counts
+// Calculate marginalised log likelihood from observed counts
 double ConjugateCategoricalDirichlet::getLogLikelihoodFromObservations(
     const std::vector<int>& counts) const {
     
@@ -160,10 +167,10 @@ double ConjugateCategoricalDirichlet::getLogLikelihoodFromObservations(
         count_total += counts[i];
         alpha_total += alphas[i];
         
-        log_likelihood += gammaLn(counts[i] + alphas[i]) - gammaLn(alphas[i]);
+        log_likelihood += std::lgamma(counts[i] + alphas[i]) - std::lgamma(alphas[i]);
     }
     
-    log_likelihood += gammaLn(alpha_total) - gammaLn(count_total + alpha_total);
+    log_likelihood += std::lgamma(alpha_total) - std::lgamma(count_total + alpha_total);
     
     return log_likelihood;
 }
@@ -207,11 +214,8 @@ CategoricalDistribution& ConjugateCategoricalDirichlet::getObservationDistributi
 
 // Private methods
 void ConjugateCategoricalDirichlet::updateObservationDistribution() {
-    auto means = parameter_distribution_->mean();
-    observation_distribution_ = std::make_unique<CategoricalDistribution>(means);
-}
+ //   auto means = parameter_distribution_->mean();
 
-// Log gamma function (using standard library)
-double ConjugateCategoricalDirichlet::gammaLn(double x) const {
-    return std::lgamma(x);
+//    observation_distribution_ = std::make_unique<CategoricalDistribution>(means);
+    observation_distribution_->set_probs(parameter_distribution_->mean());
 }

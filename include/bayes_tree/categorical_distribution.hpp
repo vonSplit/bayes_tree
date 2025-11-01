@@ -4,6 +4,7 @@
 class CategoricalDistribution {
 public:
     CategoricalDistribution(const std::vector<double>& probs);  // declaration only
+    void set_probs(const std::vector<double>& probs);
     const std::vector<double>& probs() const;
     double log_likelihood(const std::vector<int>& counts) const;
 

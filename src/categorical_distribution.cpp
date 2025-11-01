@@ -7,12 +7,24 @@
 
 CategoricalDistribution::CategoricalDistribution(const std::vector<double>& probs) {
     std::cout << "Constructor called\n";
+
+    set_probs(probs);
+    // if (probs.empty())
+    //     throw std::invalid_argument("Probability vector cannot be empty.");
+
+    // probabilities_ = probs;  // Creates a copy
+    // normalise();
+}
+
+
+void CategoricalDistribution::set_probs(const std::vector<double>& probs) {
     if (probs.empty())
         throw std::invalid_argument("Probability vector cannot be empty.");
 
     probabilities_ = probs;  // Creates a copy
     normalise();
 }
+
 
 // Normalizes the probability vector to sum to 1
 void CategoricalDistribution::normalise() {
