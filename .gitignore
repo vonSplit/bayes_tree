@@ -24,8 +24,11 @@ Makefile
 *.so
 *.dylib
 
-# VSCode
-.vscode/
+# VSCode: ignore all settings except those explicitly included
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
 
 # Python
 __pycache__/

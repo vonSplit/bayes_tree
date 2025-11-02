@@ -7,7 +7,7 @@ print("Adding to sys.path:", build_python)
 sys.path.insert(0, build_python)
 
 print("Imported pybayes_tree OK")
-from pybayes_tree import DirichletDistribution
+from pybayes_tree import DirichletDistribution # pyright: ignore[reportMissingImports]
 
 def test_log_pdf_mean_higher_than_extreme():
     alpha = [2.0, 3.0, 5.0]
