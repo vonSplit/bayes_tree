@@ -1,15 +1,30 @@
-#include <iostream>
-#include <cassert>
+//#include <iostream>
+// #include <cassert>
 #include "bayes_tree/bayes_tree.hpp"
 
-int main() {
+// int main() {
+//     BayesTree tree;
+//     double result = tree.predict(2.0);
+//     std::cout << "Prediction: " << result << std::endl;
+//     //assert(false);
+//     // simple test
+//     assert(result == 5.0);
+
+//     std::cout << "Test passed!" << std::endl;
+//     return 0;
+// }
+
+
+#define CATCH_CONFIG_MAIN
+#include <catch2/catch_all.hpp> 
+
+TEST_CASE("Basic tree prediction test") {
     BayesTree tree;
     double result = tree.predict(2.0);
-    std::cout << "Prediction: " << result << std::endl;
+  //  std::cout << "Prediction: " << result << std::endl;ss
     //assert(false);
     // simple test
-    assert(result == 5.0);
+    REQUIRE(result == 5.0);
 
-    std::cout << "Test passed!" << std::endl;
-    return 0;
+  //  std::cout << "Test passed!" << std::endl;
 }

@@ -13,10 +13,25 @@ set(PYBIND11_PYTHON_EXECUTABLE ${Python3_EXECUTABLE})
 # 2. Find pybind11
 # -----------------------------
 # If using conda, automatically append pybind11 path
-if(NOT DEFINED pybind11_DIR AND DEFINED ENV{CONDA_PREFIX})
-    set(pybind11_DIR "$ENV{CONDA_PREFIX}/Lib/site-packages/pybind11/share/cmake/pybind11")
+if(DEFINED ENV{CONDA_PREFIX})
+    message(STATUS "JT: conda prefix is defined")
+    message(STATUS "JT: conda prefix = $ENV{CONDA_PREFIX}")
+else()
+    message(STATUS "JT: conda prefix is not defined")
 endif()
-
+if(DEFINED pybind11_DIR)
+    message(STATUS "JT: pybind11_DIR is defined")
+    message(STATUS "JT: pybind11_DIR = ${pybind11_DIR}")
+else()
+    message(STATUS "JT: pybind11_DIR is not defined")
+endif()
+if((NOT DEFINED pybind11_DIR OR pybind11_DIR STREQUAL "pybind11_DIR-NOTFOUND") AND DEFINED ENV{CONDA_PREFIX})
+    message(STATUS "JT: Setting pybind11_DIR based on CONDA_PREFIX")
+#    set(pybind11_DIR "$ENV{CONDA_PREFIX}/Lib/site-packages/pybind11/share/cmake/pybind11")
+    # Use backslashes for Windows-style paths, and escape them properly
+    set(pybind11_DIR "$ENV{CONDA_PREFIX}\\Lib\\site-packages\\pybind11\\share\\cmake\\pybind11")
+    message(STATUS "JT: pybind11_DIR = ${pybind11_DIR}")
+endif()
 find_package(pybind11 CONFIG REQUIRED)
 
 # -----------------------------

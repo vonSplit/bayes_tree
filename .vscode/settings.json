@@ -77,7 +77,15 @@
       "set": "cpp",
       "valarray": "cpp",
       "variant": "cpp",
-      "xtree": "cpp"
+      "xtree": "cpp",
+      "chrono": "cpp",
+      "condition_variable": "cpp",
+      "csignal": "cpp",
+      "coroutine": "cpp",
+      "resumable": "cpp",
+      "fstream": "cpp",
+      "future": "cpp",
+      "regex": "cpp"
     },
     // This tells the Testing panel to invoke ctest under the hood when you click the “Run” button.
     "cmake.ctestArgs": ["-C", "Debug", "--output-on-failure"],
