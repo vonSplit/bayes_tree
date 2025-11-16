@@ -28,54 +28,38 @@ target_include_directories(bayes_tree
 
 # ======== Tests: C++ ========
 
-# For testing C++, we use FetchContent to get Catch2
+# For testing C++, we use FetchContent to get Google Test (gtest)
 include(FetchContent)
 
-# Fetch Catch2 (header-only, so no external build step)
+# Fetch Google Test
 FetchContent_Declare(
-  Catch2
-  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-  GIT_TAG v3.6.0  # or latest stable
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG v1.14.0  # Use latest stable release
 )
-FetchContent_MakeAvailable(Catch2)
+FetchContent_MakeAvailable(googletest)
 
 enable_testing()
-include(Catch)  # provides catch_discover_tests()
-# Create test executable test_tree from the test source file
-# test_tree has access to bayes_tree library
-#target_link_libraries(test_tree PRIVATE bayes_tree)
 
-add_executable       (test_tree tests/test_tree.cpp)
-target_link_libraries(test_tree PRIVATE bayes_tree Catch2::Catch2WithMain)
+# Create test executables
+add_executable(test_tree tests/test_tree.cpp)
+target_link_libraries(test_tree PRIVATE bayes_tree gtest_main)
 
-add_executable       (test_categorical_distribution tests/test_categorical_distribution.cpp)
-target_link_libraries(test_categorical_distribution PRIVATE bayes_tree Catch2::Catch2WithMain)
-# target_link_libraries(test_categorical_distribution PRIVATE bayes_tree)
+add_executable(test_categorical_distribution tests/test_categorical_distribution.cpp)
+target_link_libraries(test_categorical_distribution PRIVATE bayes_tree gtest_main)
 
-# add_executable       (test_dirichlet_distribution tests/test_dirichlet_distribution.cpp)
-# target_link_libraries(test_dirichlet_distribution PRIVATE bayes_tree)
+add_executable(test_dirichlet_distribution tests/test_dirichlet_distribution.cpp)
+target_link_libraries(test_dirichlet_distribution PRIVATE bayes_tree gtest_main)
 
-# add_executable       (test_conjugate_categorical_dirichlet tests/test_dirichlet_distribution.cpp)
-# target_link_libraries(test_conjugate_categorical_dirichlet PRIVATE bayes_tree)
+add_executable(test_conjugate_categorical_dirichlet tests/test_conjugate_categorical_dirichlet.cpp)
+target_link_libraries(test_conjugate_categorical_dirichlet PRIVATE bayes_tree gtest_main)
 
-# Enable CTest support  
-enable_testing()
-# Register tests with CTest: NAME <test_name> COMMAND <executable>
-# Or can discover autoatically with Catch2: catch_discover_tests()
-#add_test(NAME test_tree                            COMMAND test_tree)
-#add_test(NAME test_categorical_distribution        COMMAND test_categorical_distribution)
-#add_test(NAME test_dirichlet_distribution          COMMAND test_dirichlet_distribution)
-#add_test(NAME test_conjugate_categorical_dirichlet COMMAND test_conjugate_categorical_dirichlet)
-
-#add_executable(test_core tests/test_core.cpp)
-#target_link_libraries(test_core PRIVATE Catch2::Catch2WithMain)
-
-# This line auto-discovers all TEST_CASEs in the binary and adds them to CTest
-catch_discover_tests(test_tree)
-catch_discover_tests(test_categorical_distribution) 
-#catch_discover_tests(test_categorical_distribution)
-#catch_discover_tests(test_dirichlet_distribution)
-#catch_discover_tests(test_conjugate_categorical_dirichlet)
+# Auto-discover tests using gtest_discover_tests
+include(GoogleTest)
+gtest_discover_tests(test_tree)
+gtest_discover_tests(test_categorical_distribution)
+gtest_discover_tests(test_dirichlet_distribution)
+gtest_discover_tests(test_conjugate_categorical_dirichlet)
 
 
 
