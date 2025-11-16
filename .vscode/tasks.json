@@ -1,15 +1,17 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        // build your whole project before launching the debugger.
-        {
-            "label": "build",
-            "type": "shell",
-            "command": "cmake --build build --config Debug",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "cmake --preset ninja-debug && cmake --build build",
+      "group": { "kind": "build", "isDefault": true },
+      "options": {
+        "env": {
+          "CONDA_PREFIX": "C:/Users/User/miniconda3/envs/pk1",
+          "PATH": "C:/Users/User/miniconda3/envs/pk1/Library/bin;C:/Users/User/miniconda3/envs/pk1/Scripts;${env:PATH}"
         }
-    ]
+      }
+    }
+  ]
 }

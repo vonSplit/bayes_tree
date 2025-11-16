@@ -93,11 +93,24 @@
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": ["tests"],
     "python.envFile": "${workspaceFolder}/.env",
+
     // CMake Tools settings
-    "cmake.generator": "Visual Studio 17 2022",
-    "cmake.configureSettings": {
-    "Python3_ROOT_DIR": "${env:CONDA_PREFIX}",
-    "Python3_FIND_STRATEGY": "LOCATION",
-    "pybind11_DIR": "${env:CONDA_PREFIX}\\Lib\\site-packages\\pybind11\\share\\cmake\\pybind11"
-  }
+    // Use presets from CMakePresets.json instead of legacy settings
+    "cmake.defaultConfigurePreset": "ninja-debug",
+    
+    // Note: cmake.generator, cmake.buildType, and cmake.configureArgs are NOT used
+    // when cmake.defaultConfigurePreset is set. The preset controls all configuration.
+    // If you need to override individual presets at runtime, use the Command Palette:
+    // "CMake: Select Configure Preset" or "CMake: Select Build Preset"
+    
+    "cmake.environment": {
+      "CONDA_PREFIX": "C:/Users/User/miniconda3/envs/pk1",
+      "PATH": "C:/Users/User/miniconda3/envs/pk1/Library/bin;C:/Users/User/miniconda3/envs/pk1/Scripts;${env:PATH}"
+    },
+
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.debugConfig": {
+      "program": "${workspaceFolder}/build/Debug/${command:cmake.launchTargetName}.exe"
+    }
+
 }

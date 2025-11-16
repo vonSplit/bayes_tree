@@ -3,6 +3,7 @@
 /bin/
 /lib/
 /out/
+/_deps/
 
 # CMake generated files
 CMakeCache.txt
@@ -46,3 +47,4 @@ Desktop.ini
 *.log
 *.tmp
 build/CMakeFiles/rules.ninja
+_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build

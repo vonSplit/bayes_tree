@@ -2,10 +2,21 @@
   "version": 3,
   "configurePresets": [
     {
-      "name": "windows-msvc",
-      "generator": "Visual Studio 17 2022",
-      "architecture": "x64",
+      "name": "ninja-debug",
+      "generator": "Ninja",
       "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "BUILD_PYTHON_BINDINGS": "ON",
+        "Python3_ROOT_DIR": "C:/Users/User/miniconda3/envs/pk1",
+        "pybind11_DIR": "C:/Users/User/miniconda3/envs/pk1/Lib/site-packages/pybind11/share/cmake/pybind11"
+      }
+    },  
+    {
+      "name": "ninja-release",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "BUILD_PYTHON_BINDINGS": "ON",
         "Python3_ROOT_DIR": "C:/Users/User/miniconda3/envs/pk1",
         "pybind11_DIR": "C:/Users/User/miniconda3/envs/pk1/Lib/site-packages/pybind11/share/cmake/pybind11"
       }

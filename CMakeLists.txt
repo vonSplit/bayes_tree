@@ -82,7 +82,8 @@ catch_discover_tests(test_categorical_distribution)
 
 
 # ======== Python bindings ========
-option(BUILD_PYTHON_BINDINGS "Build Python bindings" ON)
+# Create CMake cache variable and set default value
+option(BUILD_PYTHON_BINDINGS "Build Python bindings" ON) 
 if (BUILD_PYTHON_BINDINGS)
     add_subdirectory(python)
 endif()
